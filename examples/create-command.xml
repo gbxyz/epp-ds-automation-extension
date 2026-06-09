@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <create>
+      <create xmlns="urn:ietf:params:xml:ns:domain-1.0">
+        <name>example.com</name>
+        <period unit="y">1</period>
+        <authInfo>
+          <pw/>
+        </authInfo>
+      </create>
+    </create>
+    <extension>
+      <create xmlns="urn:ietf:params:xml:ns:ds-automation-1.0">
+        <automation enabled="true"/>
+      </create>
+    </extension>
+  </command>
+</epp>

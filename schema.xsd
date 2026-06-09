@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+  xmlns:ds-automation="urn:ietf:params:xml:ns:ds-automation-1.0"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="urn:ietf:params:xml:ns:ds-automation-1.0"
+  elementFormDefault="qualified">
+
+  <annotation>
+    <documentation>
+     DS Automation Status Extension for the
+     Extensible Provisioning Protocol (EPP)
+   </documentation>
+  </annotation>
+
+  <!--
+  Child elements found in EPP commands.
+  -->
+  <element name="info" type="ds-automation:infDataType"/>
+  <element name="create" type="ds-automation:createType"/>
+  <element name="update" type="ds-automation:updateType"/>
+
+  <complexType name="automationType">
+    <attribute name="enabled" type="boolean" default="true"/>
+  </complexType>
+
+  <complexType name="infDataType">
+    <sequence>
+      <element name="automation" type="automationType"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="createType">
+    <sequence>
+      <element name="automation" type="automationType"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="updateType">
+    <sequence>
+      <element name="automation" type="automationType"/>
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <update xmlns="urn:ietf:params:xml:ns:domain-1.0">
+        <name>example.com</name>
+      </update>
+    </update>
+    <extension>
+      <update xmlns="urn:ietf:params:xml:ns:ds-automation-1.0">
+        <automation enabled="false"/>
+      </update>
+    </extension>
+  </command>
+</epp>
