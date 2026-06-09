@@ -1,6 +1,7 @@
 ---
-title: DS Automation Status Extension for the Extensible Provisioning Protocol 
-(EPP)
+title: |
+    DS Automation Status Extension for the Extensible Provisioning Protocol (EPP)
+abbrev: EPP DS Automation Extension
 docname: DOC_NAME
 stand_alone: true
 ipr: trust200902
@@ -31,6 +32,19 @@ normative:
     RFC9615:
     STD95:
     BCP14:
+    XSD-DATATYPES:
+        title: "XML Schema Part 2: Datatypes Second Edition"
+
+# <reference anchor="XSD-DATATYPES" target="https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/" quoteTitle="true" derivedAnchor="XSD-DATATYPES">
+# <front>
+# <title></title>
+# <author initials="P." surname="Biron" fullname="Paul V. Biron" role="editor"/>
+# <author initials="A." surname="Malhotra" fullname="Ashok Malhotra" role="editor"/>
+# <date month="October" year="2004"/>
+# </front>
+# <refcontent>W3C Recommendation</refcontent>
+#         </reference>
+        
 
 informative:
     RFC9499:
@@ -75,9 +89,39 @@ carried out by the server.
 It also describes how the automation state of domain objects should be 
 represented in RDAP ({{STD95}}) responses.
 
-## 1.1. Conventions Used in This Document
+## Conventions Used in This Document
 
-(Standard boilerplate about BCP14 keywords, XML syntax, etc)
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
+"SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this 
+document are to be interpreted as described in {{BCP14}} {{RFC2119}} {{RFC8174}} when, 
+and only when, they appear in all capitals, as shown here.
+
+In this document's examples, "`C:`" represents lines sent by a protocol client 
+and "`S:`" represents lines returned by a protocol server. Indentation and white 
+space in these examples are provided only to illustrate element relationships 
+and are not required features of this protocol.
+
+A protocol client that is authorized to manage an existing object is described 
+as a "sponsoring" client throughout this document.
+
+XML is case sensitive. Unless stated otherwise, the XML specifications and 
+examples provided in this document MUST be interpreted in the character case 
+presented in order to develop a conforming implementation.
+
+EPP uses XML namespaces to provide an extensible object management framework 
+and to identify schemas required for XML instance parsing and validation. These 
+namespaces and schema definitions are used to identify both the base protocol 
+schema and the schemas for managed objects.
+
+The XML namespace prefixes used in these examples (such as the string `ds-automation` in 
+`ds-automation:automation`) are solely for illustrative purposes. A conforming implementation 
+**MUST NOT** require the use of these or any other specific namespace prefixes.
+
+In accordance with Section 3.2.2.1 of XML Schema Part 2: Datatypes 
+{{XSD-DATATYPES}}, the allowable lexical representations for the `xs:boolean` 
+datatype are the strings "`0`" and "`false`" for the concept 'false' and the 
+strings "`1`" and "`true`" for the concept 'true'. Implementations **MUST** support 
+both styles of lexical representation.
 
 # EPP Extension Elements
 
