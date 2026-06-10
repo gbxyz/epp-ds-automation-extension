@@ -223,7 +223,7 @@ These two status values will be registered in {{RDAP-JSON-VALUES}} (see
 
 These two values **MUST NOT** both be present at the same time.
 
-# Formal Syntax (EPP) {#schema}
+# Formal Syntax (XML) {#schema}
 
 An EPP object mapping is specified in XML Schema notation. The formal syntax
 presented here is a complete schema representation of the object mapping
