@@ -18,7 +18,6 @@ author:
 
 normative:
   I-D.ietf-dnsop-ds-automation:
-  RFC2199:
   RFC3688:
   RFC5730:
   RFC5731:
@@ -97,7 +96,7 @@ represented in RDAP ({{STD95}}) responses.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
 "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this 
-document are to be interpreted as described in {{BCP14}} {{RFC2199}} 
+document are to be interpreted as described in {{BCP14}} {{RFC2119}}
 {{RFC8174}} when, and only when, they appear in all capitals, as shown here.
 
 In this document's examples, "`C:`" represents lines sent by a protocol client 
