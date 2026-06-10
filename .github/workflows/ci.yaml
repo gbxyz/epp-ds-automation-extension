@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+#      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      pages: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: docker compose run build
+
+      - run: tar --directory=_site -z -c -v -f github-pages .
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+
+      - uses: actions/deploy-pages@v4

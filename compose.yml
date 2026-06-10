@@ -1,0 +1,11 @@
+services:
+  build:
+    context: .
+    dockerfile_inline: |
+      FROM ubuntu:latest
+      RUN apt -qqq update
+      RUN apt -qqq install gpp ruby-kramdown-rfc2629 libxml2-utils
+    volumes:
+      - .:/src
+
+    command: mkdir _site ; make all ; mv *txt *xml _site/
