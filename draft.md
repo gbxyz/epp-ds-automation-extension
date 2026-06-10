@@ -1,6 +1,7 @@
 ---
 title: |
-  DS Automation Status Extension for the Extensible Provisioning Protocol (EPP)
+  DS Automation Status Extension for the Extensible Provisioning
+  Protocol (EPP)
 abbrev: EPP DS Automation Extension
 docname: DOC_NAME
 stand_alone: true
@@ -24,6 +25,7 @@ normative:
   RFC7451:
   STD95:
   BCP14:
+
   XSD-DATATYPES:
     title: "XML Schema Part 2: Datatypes Second Edition"
     target: https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/
@@ -32,9 +34,11 @@ normative:
       - fullname: Ashok Malhotra
     date: 2004-10
     refcontent: W3C Recommendation
+
   RDAP-JSON-VALUES:
     title: RDAP JSON Values
     target: https://www.iana.org/assignments/rdap-json-values/rdap-json-values.xhtml
+
   EPP-EXTENSIONS:
     title: Extensions for the Extensible Provisioning Protocol (EPP)
     target: https://www.iana.org/assignments/epp-extensions/epp-extensions.xhtml
@@ -58,6 +62,9 @@ This document specifies an extension to the Domain Mapping for the Extensible
 Provisioning Protocol (EPP) which allows EPP clients to enable and disable
 automatic DNSSEC maintenance carried out by the server. It also describes how
 the maintenance state of a domain can be included in RDAP responses.
+
+The source for this draft, and an issue tracker, may can be found at <eref
+target="https://github.com/gbxyz/epp-ds-automation-extension"/>.
 
 --- middle
 
@@ -349,3 +356,19 @@ commands to enable or disable DS automation for all domains under their
 sponsorship. It is **RECOMMENDED** that server operators provide an out-of-band
 method for clients to enable or disable DS automation for all domains under
 their sponsorship in a single operation.
+
+# Change Log
+
+This section is to be removed before publishing as an RFC.
+
+## v00
+
+* Initial version based on conversations within ICANN GDS Technical Services,
+and Peter Thomassen.
+
+# Acknowledgements
+
+The author wishes to thank the following for their constructive feedback and
+advice during the development of this document:
+
+Andy Newton, Gustavo Lozano, Francisco Arias, Peter Thomassen.
