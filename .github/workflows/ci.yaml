@@ -19,7 +19,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: docker compose run build
+      - run: rm -rf _site ; mkdir -v _site
+
+      - run: docker compose run --remove-orphans build
 
       - run: tar --directory=_site -z -c -v -f github-pages .
 
