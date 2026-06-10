@@ -9,6 +9,10 @@
         <name>example.com</name>
         <roid>EXAMPLE1-REP</roid>
         <status s="ok"/>
+        <ns>
+          <hostObj>ns1.example.net</hostObj>
+          <hostObj>ns2.example.org</hostObj>
+        </ns>
         <clID>ClientX</clID>
       </infData>
     </resData>

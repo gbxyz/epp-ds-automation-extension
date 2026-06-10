@@ -5,6 +5,10 @@
       <create xmlns="urn:ietf:params:xml:ns:domain-1.0">
         <name>example.com</name>
         <period unit="y">1</period>
+        <ns>
+          <hostObj>ns1.example.net</hostObj>
+          <hostObj>ns2.example.org</hostObj>
+        </ns>
         <authInfo>
           <pw/>
         </authInfo>
