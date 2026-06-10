@@ -2,14 +2,16 @@
 <epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
   <command>
     <update>
-      <update xmlns="urn:ietf:params:xml:ns:domain-1.0">
-        <name>example.com</name>
-      </update>
+      <domain:update
+        xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>example.com</domain:name>
+      </domain:update>
     </update>
     <extension>
-      <update xmlns="urn:ietf:params:xml:ns:ds-automation-1.0">
-        <automation enabled="false"/>
-      </update>
+      <ds-automation:update
+        xmlns:ds-automation="urn:ietf:params:xml:ns:ds-automation-1.0">
+        <ds-automation:automation enabled="false"/>
+      </ds-automation:update>
     </extension>
   </command>
 </epp>

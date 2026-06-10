@@ -2,22 +2,24 @@
 <epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
   <command>
     <create>
-      <create xmlns="urn:ietf:params:xml:ns:domain-1.0">
-        <name>example.com</name>
-        <period unit="y">1</period>
-        <ns>
-          <hostObj>ns1.example.net</hostObj>
-          <hostObj>ns2.example.org</hostObj>
-        </ns>
-        <authInfo>
-          <pw/>
-        </authInfo>
-      </create>
+      <domain:create
+        xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>example.com</domain:name>
+        <domain:period unit="y">1</domain:period>
+        <domain:ns>
+          <domain:hostObj>ns1.example.net</domain:hostObj>
+          <domain:hostObj>ns2.example.org</domain:hostObj>
+        </domain:ns>
+        <domain:authInfo>
+          <domain:pw/>
+        </domain:authInfo>
+      </domain:create>
     </create>
     <extension>
-      <create xmlns="urn:ietf:params:xml:ns:ds-automation-1.0">
-        <automation enabled="true"/>
-      </create>
+      <ds-automation:create
+        xmlns:ds-automation="urn:ietf:params:xml:ns:ds-automation-1.0">
+        <ds-automation:automation enabled="true"/>
+      </ds-automation:create>
     </extension>
   </command>
 </epp>

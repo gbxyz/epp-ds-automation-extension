@@ -161,7 +161,7 @@ status  for the domain.
 
 Example domain `<info>` response:
 
-#exec xmllint --format examples/info-response.xml | sed 's/^/    S: /'
+#exec sed 's/^/    S: /' examples/info-response.xml
 
 ## EPP Transform Commands
 
@@ -183,7 +183,7 @@ status  for the domain.
 
 Example domain `<create>` command:
 
-#exec xmllint --format examples/create-command.xml | sed 's/^/    C: /'
+#exec sed 's/^/    C: /' examples/create-command.xml
 
 ### EPP `<update>` Command
 
@@ -203,7 +203,7 @@ status for the domain.
 
 Example domain `<update>` command:
 
-#exec xmllint --format examples/update-command.xml | sed 's/^/    C: /'
+#exec sed 's/^/    C: /' examples/update-command.xml
 
 # RDAP Status Mapping
 
@@ -349,4 +349,4 @@ wish to deploy (or decommission) DS automation themselves to submit `<update>`
 commands to enable or disable DS automation for all domains under their
 sponsorship. It is **RECOMMENDED** that server operators provide an out-of-band
 method for clients to enable or disable DS automation for all domains under
-their sponsorship.
+their sponsorship in a single operation.
