@@ -12,4 +12,4 @@ all:
 	@kdrfc -ht $(DOC_NAME).md
 
 pages:
-	@mv -fv *.xml *.txt *.html _site/
+	@mv -fv "$(DOC_NAME).html" _site/
