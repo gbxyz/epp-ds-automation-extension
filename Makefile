@@ -1,4 +1,5 @@
-DOC_NAME=draft-brown-epp-ds-automation-extension-00
+VERSION=00
+DOC_NAME=draft-brown-epp-ds-automation-extension-$(VERSION)
 
 pages: all
 
