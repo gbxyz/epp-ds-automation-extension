@@ -10,4 +10,8 @@ services:
     volumes:
       - .:/src
       - ./_site:/src/_site
+    command: make all
+
+  pages:
+    extends: build
     command: make pages

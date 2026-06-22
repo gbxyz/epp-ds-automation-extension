@@ -21,7 +21,7 @@ jobs:
 
       - run: rm -rf _site ; mkdir -v _site
 
-      - run: docker compose run --remove-orphans build
+      - run: docker compose run --remove-orphans pages
 
       - run: tar --directory=_site -z -c -v -f github-pages .
 
