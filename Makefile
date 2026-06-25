@@ -1,5 +1,6 @@
 VERSION=00
-DOC_NAME=draft-brown-epp-ds-automation-extension-$(VERSION)
+PREFIX=draft-brown-epp-ds-automation-extension-
+DOC_NAME=$(PREFIX)$(VERSION)
 
 pages: all
 
@@ -18,4 +19,4 @@ pages:
 	cp -fv "$(DOC_NAME).xml" "$(DOC_NAME).txt" _site/
 
 clean:
-	rm -rfv $(DOC_NAME).* _site
+	rm -rfv $(PREFIX)* _site
