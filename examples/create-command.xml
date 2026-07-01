@@ -17,7 +17,7 @@
     </create>
     <extension>
       <ds-automation:create
-        xmlns:ds-automation="urn:ietf:params:xml:ns:ds-automation-1.0">
+        xmlns:ds-automation="urn:ietf:params:xml:ns:epp:ds-automation-1.0">
         <ds-automation:automation enabled="true"/>
       </ds-automation:create>
     </extension>

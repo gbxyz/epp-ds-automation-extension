@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema
   xmlns="http://www.w3.org/2001/XMLSchema"
-  xmlns:ds-automation="urn:ietf:params:xml:ns:ds-automation-1.0"
-  targetNamespace="urn:ietf:params:xml:ns:ds-automation-1.0"
+  xmlns:ds-automation="urn:ietf:params:xml:ns:epp:ds-automation-1.0"
+  targetNamespace="urn:ietf:params:xml:ns:epp:ds-automation-1.0"
   elementFormDefault="qualified">
 
   <annotation>
