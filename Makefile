@@ -1,4 +1,4 @@
-VERSION=00
+VERSION=01
 PREFIX=draft-brown-epp-ds-automation-extension-
 DOC_NAME=$(PREFIX)$(VERSION)
 

@@ -16,10 +16,11 @@
       </domain:create>
     </create>
     <extension>
-      <ds-automation:create
-        xmlns:ds-automation="urn:ietf:params:xml:ns:epp:ds-automation-1.0">
-        <ds-automation:automation enabled="true"/>
-      </ds-automation:create>
+      <automation:create
+        xmlns:automation="urn:ietf:params:xml:ns:epp:delegation-maintenance-automation-1.0">
+        <automation:ns-automation enabled="false"/>
+        <automation:ds-automation enabled="true"/>
+      </automation:create>
     </extension>
   </command>
 </epp>

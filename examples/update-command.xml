@@ -8,10 +8,11 @@
       </domain:update>
     </update>
     <extension>
-      <ds-automation:update
-        xmlns:ds-automation="urn:ietf:params:xml:ns:epp:ds-automation-1.0">
-        <ds-automation:automation enabled="false"/>
-      </ds-automation:update>
+      <automation:create
+        xmlns:automation="urn:ietf:params:xml:ns:epp:delegation-maintenance-automation-1.0">
+        <automation:ns-automation enabled="true"/>
+        <automation:ds-automation enabled="false"/>
+      </automation:create>
     </extension>
   </command>
 </epp>

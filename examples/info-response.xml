@@ -18,10 +18,11 @@
       </domain:infData>
     </resData>
     <extension>
-      <ds-automation:infData
-        xmlns:ds-automation="urn:ietf:params:xml:ns:epp:ds-automation-1.0">
-        <ds-automation:automation enabled="true"/>
-      </ds-automation:infData>
+      <automation:create
+        xmlns:automation="urn:ietf:params:xml:ns:epp:delegation-maintenance-automation-1.0">
+        <automation:ns-automation enabled="false"/>
+        <automation:ds-automation enabled="true"/>
+      </automation:create>
     </extension>
     <trID>
       <svTRID>54322-XYZ</svTRID>
